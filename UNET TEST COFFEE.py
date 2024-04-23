@@ -50,7 +50,7 @@ def load_images_and_masks(base_dir, target_size=(224, 224)):
     return np.array(images), np.array(masks)
 
 # Utilisation de la fonction
-base_dir = 'C:/Users/helfo/OneDrive/Documents/USTHB/M2 RT/PFE/Code/NEWUNET/'
+base_dir = '/NEWUNET/'
 x_train, y_train = load_images_and_masks(os.path.join(base_dir, 'train'))
 x_val, y_val = load_images_and_masks(os.path.join(base_dir, 'val'))
 x_test, y_test = load_images_and_masks(os.path.join(base_dir, 'test'))
@@ -178,12 +178,12 @@ def plot_model_performance(history):
 # Utilisation de la fonction avec l'historique de l'apprentissage de votre modèle
 plot_model_performance(history)
 
-# Sauvegarde au format HDF5
-model.save('C:/Users/helfo/OneDrive/Documents/USTHB/M2 RT/PFE/Code/modelunetcoffee.h5')
+# save the model as HDF5
+model.save('modelunetcoffee.h5')
 
 from tensorflow.keras.models import load_model
 
-model = load_model('C:/Users/helfo/OneDrive/Documents/USTHB/M2 RT/PFE/Code/modelunetcoffee.h5')
+model = load_model('modelunetcoffee.h5')
 import tensorflow as tf
 
 
@@ -200,7 +200,7 @@ def load_and_prepare_image(image_path, target_size=(224, 224)):
     image_resized = np.expand_dims(image_resized, axis=0)  # Ajouter une dimension batch
     return image_resized
 
-image_path = 'C:/Users/helfo/OneDrive/Documents/USTHB/M2 RT/PFE/Code/EtiquCRDB/20-40/30.85335078044677_39.jpg'  # Remplacez par le chemin vers votre image
+image_path = 'plant villag/image/30.85335078044677_39.jpg'  # Remplacez par le chemin vers votre image
 image_to_predict = load_and_prepare_image(image_path)
 
 predicted_mask = model.predict(image_to_predict)
