@@ -50,7 +50,7 @@ def load_images_and_masks(base_dir, target_size=(224, 224)):
     return np.array(images), np.array(masks)
 
 # Utilisation de la fonction
-base_dir = '/NEWUNET/'
+base_dir = '/coffee unet/'
 x_train, y_train = load_images_and_masks(os.path.join(base_dir, 'train'))
 x_val, y_val = load_images_and_masks(os.path.join(base_dir, 'val'))
 x_test, y_test = load_images_and_masks(os.path.join(base_dir, 'test'))
