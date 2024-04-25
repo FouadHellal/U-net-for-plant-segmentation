@@ -64,7 +64,7 @@ This script will load the trained model, evaluate its performance on the test da
 
 To make predictions using the trained model, you can use the predict.py script:
 
-    ```bash
+    
     python predict.py --image_path /path/to/image.jpg
     
 
