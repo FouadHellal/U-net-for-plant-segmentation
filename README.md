@@ -2,11 +2,10 @@
 
 This repository contains the code for training and evaluating a UNet model for coffee leaf rust segmentation. The model is trained using the COFFEE dataset and can be used to segment coffee leaf rust from images, and many other datasets.
 
-## Usage
-
 ## Dataset Description
 
 The COFFEE dataset is organized into three main directories: train, val, and test. Each directory contains subdirectories for images and masks. The images are in JPG format, and their corresponding masks are in PNG format. The masks are binary images where the regions of interest are represented as white (pixel value 255) and the background as black (pixel value 0). the dimensions used are 224*224px.
+## Usage
 ### Prerequisites
 
 - Python 3.x
@@ -19,7 +18,7 @@ The COFFEE dataset is organized into three main directories: train, val, and tes
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/username/unet-coffee-segmentation.git
+   git clone https://github.com/username/U-net-for-plant-segmentation.git
 
 2. **Navigate to the repository directory:**
 
@@ -75,4 +74,4 @@ Replace /path/to/image.jpg with the path to the image for which you want to gene
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-Feel free to reach out to us if you have any questions or suggestions!
+Feel free to reach out to me if you have any questions or suggestions!
