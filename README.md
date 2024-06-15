@@ -32,8 +32,8 @@ The COFFEE dataset is organized into three main directories: train, val, and tes
 ## Training the Model
 
 To train the UNet model, run the train.py script:
-    ```bash
-    python train.py
+    `python train.py`
+    
 
 This script will load the COFFEE dataset, train the model, and save the trained model weights to a file named modelunetcoffee.h5.
 ![image](https://github.com/FouadHellal/U-net-for-plant-segmentation/assets/113594352/ba940da7-9e0d-479f-895d-da7ee0c4d4be)
